@@ -1,0 +1,67 @@
+Hi all,
+
+Please find below questions and send answers in notepad 
+
+Time : 35 Min
+Starting at 12:20 
+End Time : 12:55 
+
+1) INPUT --> AAABBCCC OUTPUT ---> 3A2B3C
+
+2)Given list of elements, convert each element to a key-value pair dictionary, dividing digits equally
+
+Input : test_list = [2323, 82, 129388, 234, 95]
+Output : {23: 23, 8: 2, 129: 388, 2: 34, 9: 5}
+
+
+3) Given a list, the task is to write a Python Program to find the Index containing String.
+
+4) Write a simple program to display inverse of  pyramid  
+
+Ex : 5
+
+* * * * *
+* * * *
+* * *
+* *
+*
+
+Answers:
+
+1)
+def alpha_count(s)
+	res=""
+	count=1
+	for i in range(len(s)-1):
+		if s[i]==s[i+1]:
+			count+=1
+		else:
+			res+= str(count) + s[i]
+			count=1
+	return res
+
+print(alpha_count("AAABBBCCC"))
+
+2)
+		
+
+3)
+def str_index(test_list):
+	d={}
+	for index,item in enumerate(test_list):
+		if isinstance(item,str):
+			d[item]=d[index]
+	return d
+
+print(str_index([1,2,3,"test",4,"python"]))
+
+
+4)
+def pattern(n):
+	for row in range(n,0,-1):
+		print("* " * row)
+
+pattern(5)
+
+
+
