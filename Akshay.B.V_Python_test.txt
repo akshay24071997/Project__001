@@ -1,0 +1,30 @@
+Questions:
+
+1.    Write a code to shuffle any array of your choice.  
+
+2.    Write a code Program to reverse a string without using String inbuilt function reverse()
+
+3.    Write a code to find the vowels in the below string “ALGOSHACK TECHNOLOGIES”
+
+Answers:
+
+1. from randam import randint
+   l = ['python','java','121','php','server','selenium']
+   len = randint(0,len(l))
+   for i in range(len(l)):
+	l[i] = l[len]
+   print(l) 
+
+
+2.string = 'Programming'
+  s = ""
+  for i in string:
+	s = i + s
+  print(s)
+
+3.S = "ALGOSHACK TECHNOLOGIES"
+  for i in s:
+	if i.upper() in "AEIOU":
+		print(i)
+
+	
